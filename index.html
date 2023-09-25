@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSV File Upload and Search </title>
+	</head>
+	<body>
+		<h1>CSV File Upload</h1>
+		<form action="http://localhost:3000/api/files" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file" />
+			<button type="submit">Send file</button>
+		</form>
+
+		<h1>User Research</h1>
+		<form action="/api/users" method="GET">
+			<input type="text" name="q" placeholder="Search by name" />
+			<button type="submit">Search</button>
+		</form>
+	</body>
+</html>
